@@ -1,5 +1,5 @@
 # CLIMATE CHANGE — AN ARABIC AWARENESS WEBSITE
-#### Video Demo:  <URL HERE>
+#### Video Demo:  https://youtu.be/n27woSrAb2w
 #### Description:
 
 Climate Change is a multi-page, fully responsive website written in Arabic (right-to-left) that explains what climate change is, what causes it, what its consequences are, and how renewable energy can be part of the solution. I built it as my CS50 final project because most of the well-designed climate-awareness material online is in English, and I wanted to make the same information approachable for Arabic-speaking readers, including students my age who are seeing this topic for the first time.
