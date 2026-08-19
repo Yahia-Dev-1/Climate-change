@@ -487,10 +487,91 @@ footer p {
 
     h1 {
         font-size: 1.8rem;
+        margin: 1.5rem 0 0.8rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin: 1.5rem 0 0.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 0 10px;
+        margin: 0.8rem auto;
+    }
+
+    section,
+    .card {
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 10px;
+    }
+
+    img {
+        max-width: 95%;
+        border-radius: 12px;
+        margin: 20px auto;
+    }
+
+    video {
+        border-radius: 12px;
+        margin: 15px auto;
+    }
+
+    footer {
+        padding: 2rem 0 1rem;
+        margin-top: 40px;
+    }
+
+    footer h2 {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 1rem 0;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        width: 90%;
+        justify-content: center;
+    }
+
+    .footer-copy {
+        font-size: 0.8rem !important;
+    }
+
+    .socialicon a {
+        width: 42px;
+        height: 42px;
+        font-size: 1.2rem;
+        margin: 0 6px;
+    }
+
+    #backToTop {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 12px;
+        font-size: 1rem;
+    }
+
+    .rtl #backToTop {
+        right: auto;
+        left: 20px;
+    }
+
+    .container {
+        padding: 0 12px;
     }
 }
 
