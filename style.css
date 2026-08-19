@@ -152,10 +152,6 @@ body {
     gap: 25px;
 }
 
-.rtl .nav-links {
-    flex-direction: row-reverse;
-}
-
 .nav-links li a {
     text-decoration: none;
     color: var(--text-color);
@@ -807,8 +803,24 @@ h3 {
     text-align: center;
 }
 
-.rtl .nav-links {
+.rtl .navbar .container {
     flex-direction: row-reverse;
+}
+
+.rtl .nav-controls {
+    flex-direction: row-reverse;
+}
+
+.rtl .nav-links li a::before {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 790px) {
+    .rtl .nav-links {
+        left: auto;
+        right: 0;
+    }
 }
 
 /* Light mode navbar extra */
