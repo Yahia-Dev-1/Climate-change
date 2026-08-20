@@ -155,7 +155,25 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
+    order: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.logo {
     order: -1;
+    flex: 0 0 auto;
+    margin: 0 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--accent-color);
+    transition: var(--transition);
+    background: linear-gradient(135deg, var(--accent-color), #007E85);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 0.5px;
 }
 
 .nav-links li a {
@@ -482,8 +500,12 @@ footer p {
         order: 0;
     }
 
+    .rtl .logo {
+        order: 1;
+    }
+
     .rtl .nav-controls {
-        order: 0;
+        order: -1;
     }
 
     .nav-links {
@@ -887,8 +909,12 @@ h3 {
     overflow: hidden;
 }
 
-.rtl .nav-links {
+.rtl .logo {
     order: 1;
+}
+
+.rtl .nav-links {
+    order: 0;
 }
 
 .rtl .nav-controls {
