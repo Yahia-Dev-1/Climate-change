@@ -232,9 +232,10 @@ body {
 h1 {
     font-size: 2.5rem;
     color: var(--accent-color);
-    margin: 2rem 0 1rem;
+    margin: 2rem auto 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding-inline-start: 20px;
+    text-align: center;
+    max-width: 900px;
 }
 
 h2 {
@@ -547,8 +548,8 @@ footer p {
 
     h1 {
         font-size: 1.6rem;
-        margin: 1.5rem 0 0.8rem;
-        padding-inline-start: 15px;
+        margin: 1.5rem auto 0.8rem;
+        text-align: center;
     }
 
     h2 {
