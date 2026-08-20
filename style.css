@@ -96,12 +96,16 @@ body {
 }
 
 .nav-controls {
+    order: 1;
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
 .logo {
+    order: 0;
+    flex: 0 0 auto;
+    margin: 0 20px;
     font-size: 1.8rem;
     font-weight: 700;
     text-decoration: none;
@@ -151,6 +155,7 @@ body {
     list-style: none;
     display: flex;
     gap: 25px;
+    order: -1;
 }
 
 .nav-links li a {
@@ -452,6 +457,33 @@ footer p {
 @media (max-width: 790px) {
     .menu-toggle {
         display: block;
+    }
+
+    .nav-links {
+        order: 0;
+        flex-direction: column;
+        gap: 0;
+        background: linear-gradient(180deg, rgba(13, 37, 63, 0.98) 0%, rgba(0, 40, 70, 0.98) 100%);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(0, 173, 181, 0.1);
+    }
+
+    .rtl .nav-links {
+        order: 0;
+    }
+
+    .rtl .nav-controls {
+        order: 0;
     }
 
     .nav-links {
@@ -852,12 +884,15 @@ h3 {
 }
 
 .rtl .navbar .container {
-    flex-direction: row-reverse;
     overflow: hidden;
 }
 
+.rtl .nav-links {
+    order: 1;
+}
+
 .rtl .nav-controls {
-    flex-direction: row-reverse;
+    order: -1;
 }
 
 .rtl .nav-links li a::before {
