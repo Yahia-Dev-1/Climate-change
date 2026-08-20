@@ -234,6 +234,7 @@ h1 {
     margin: 2rem 0 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-align: left;
+    padding: 0 20px;
 }
 
 h2 {
@@ -252,6 +253,7 @@ p {
     max-width: 800px;
     color: var(--text-color);
     font-size: 1.1rem;
+    padding: 0 20px;
 }
 
 section,
