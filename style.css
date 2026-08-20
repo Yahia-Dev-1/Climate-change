@@ -254,12 +254,10 @@ h1 {
 h2 {
     font-size: 1.8rem;
     color: var(--accent-color);
-    margin: 2rem auto 1rem;
     border-bottom: 2px solid var(--accent-color);
     display: block;
     width: fit-content;
     padding-bottom: 5px;
-    text-align: center;
 }
 
 p {
