@@ -31,6 +31,7 @@ html {
     font-family: 'Cairo', sans-serif;
     scrollbar-color: var(--accent-color) var(--bg-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -573,6 +574,27 @@ footer p {
     .container {
         padding: 0 12px;
     }
+
+    .hidden {
+        transform: translateY(20px) scale(0.98);
+    }
+
+    .hidden.from-left {
+        transform: translateX(-20px) scale(0.98);
+    }
+
+    .hidden.from-right {
+        transform: translateX(20px) scale(0.98);
+    }
+
+    section:hover,
+    .card:hover {
+        transform: none;
+    }
+
+    img:hover {
+        transform: none;
+    }
 }
 
 /* Theme Switch */
@@ -809,6 +831,7 @@ h3 {
 
 .rtl .navbar .container {
     flex-direction: row-reverse;
+    overflow: hidden;
 }
 
 .rtl .nav-controls {

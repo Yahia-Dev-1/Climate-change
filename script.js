@@ -107,6 +107,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (delay > 300) delay = 0;
     });
 
+    // Fallback: on mobile, force show all hidden elements after 2s
+    if (window.innerWidth <= 790) {
+        setTimeout(() => {
+            hiddenElements.forEach(el => el.classList.add('show'));
+        }, 2000);
+    }
+
     // --- Back to Top Button ---
     const backToTopButton = document.getElementById("backToTop");
 
