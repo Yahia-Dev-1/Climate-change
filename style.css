@@ -233,7 +233,6 @@ h1 {
     color: var(--accent-color);
     margin: 2rem 0 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-align: center;
 }
 
 h2 {
@@ -892,8 +891,11 @@ h3 {
 }
 
 .rtl h1,
-.rtl h2,
 .rtl h3 {
+    text-align: right;
+}
+
+.rtl h2 {
     text-align: center;
 }
 
