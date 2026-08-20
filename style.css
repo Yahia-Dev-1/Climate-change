@@ -27,7 +27,7 @@
 
 
 html {
-    text-align: center;
+    text-align: left;
     font-family: 'Cairo', sans-serif;
     scrollbar-color: var(--accent-color) var(--bg-color);
     scroll-behavior: smooth;
@@ -210,15 +210,18 @@ h1 {
     color: var(--accent-color);
     margin: 2rem 0 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 h2 {
     font-size: 1.8rem;
     color: var(--accent-color);
-    margin: 2rem 0 1rem;
+    margin: 2rem auto 1rem;
     border-bottom: 2px solid var(--accent-color);
-    display: inline-block;
+    display: block;
+    width: fit-content;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 p {
@@ -317,6 +320,10 @@ footer h2 {
     margin-bottom: 0.5rem;
     border-bottom: none;
     display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 footer p {
@@ -826,6 +833,21 @@ h3 {
 
 /* RTL specific overrides */
 .rtl {
+    text-align: right;
+    direction: rtl;
+}
+
+.rtl h1,
+.rtl h2,
+.rtl h3 {
+    text-align: center;
+}
+
+.rtl footer {
+    text-align: center;
+}
+
+.rtl footer p {
     text-align: center;
 }
 
