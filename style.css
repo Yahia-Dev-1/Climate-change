@@ -247,17 +247,21 @@ body {
 h1 {
     font-size: 2.5rem;
     color: var(--accent-color);
+    margin: 2rem auto 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
     max-width: 900px;
 }
 
 h2 {
     font-size: 1.8rem;
     color: var(--accent-color);
+    margin: 2rem auto 1rem;
     border-bottom: 2px solid var(--accent-color);
     display: block;
     width: fit-content;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 p {
